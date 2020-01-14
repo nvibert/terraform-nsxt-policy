@@ -8,9 +8,6 @@ resource "nsxt_policy_segment" "segment12" {
     display_name      = "segment-12"
     description       = "Terraform provisioned Segment"
     connectivity_path = "/infra/tier-1s/cgw"
-    tag {
-      scope = "scope_nico",
-      tag = "tag_nico"}
 subnet {
       cidr = "12.12.2.1/24"
 }
